@@ -3,13 +3,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
 <title>FarLands Network</title></head>
 <body>
 	<div class="header">
 		<div class="header__logo">FarLands</div>		
-		<a class="header__menu" onclick="document.getElementById('id01').style.display='flex'">Sign in</a>	
-		<a href="https://ephsylion.github.io/about" class="header__menu">About</a>
-		<a class="header__menu">Buy</a>
+		<a class="header__menu" onclick="document.getElementById('id01').style.display='flex'">Войти</a>	
+		<a href="https://ephsylion.github.io/about" class="header__menu">О нас</a>
+		<a class="header__menu">Купить</a>
 	</div>
 	<div id="id01" class="modal">
   		<form action="https://localhost:5000/api/auth">
@@ -32,7 +38,49 @@
     			</div>
   			</div>
 		</form>
-</div>
-<footer style="color: white; text-align: center; position: absolute; bottom:15px; left: 45%">FarLands Netwotk, 2020</footer>
+	</div>
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-cloud.svg" alt="Облако">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Обновление №0907 1809</h2>
+				<p>Новое обновление сервера</p>
+				<a href="https://localhost:5000/api/news/update?ver=09071809" class="cd-read-more">Читать подробнее</a>
+				<span class="cd-date">9 Июля в 18:09</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-vk.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Большой прирост сообщества</h2>
+				<p>Теперь нас 30 человек!</p>
+				<a href="https://vk.com/farlandsminecraft" class="cd-read-more">В сообщество</a>
+				<span class="cd-date">8 июля в 16:32</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-cloud.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Обновление №0707 1158</h2>
+				<p>Новое обновление сервера</p>
+				<a href="https://localhost:5000/api/news/update?ver=07071158" class="cd-read-more">Читать подробнее</a>
+				<span class="cd-date">7 Июля в 12:00</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<section><footer style="color: white; text-align: center; position: relative; bottom: 20px">FarLands Netwotk, 2020</footer></section>
 </body>
 </html>
