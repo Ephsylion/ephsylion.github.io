@@ -1,0 +1,90 @@
+body {
+	background: url("images/bg.jpg");
+}
+.header {
+	font-size: 14;
+	margin: center;
+	color: #FFFFFF;
+	padding-left: 15px;
+	padding-top: 10px;
+	height: 45px;
+	width: 300px;
+	}
+.header__logo {
+	font-size: 52;
+	font-family: 'Baloo Chettan 2', cursive;
+	text-align: center;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: left;
+}
+.header__menu {
+	font-size: 16;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	position: relative;
+	float: right;
+	color: #7974d9;
+	text-align: right;
+	cursor: pointer;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-right: 15px;
+	text-decoration: none;
+	transition: color 0.3s ease-out;
+}
+.header_filler {
+	height: 45px;
+	width: 300px;
+	float: left;
+}
+.header__menu:after {
+	display: block;
+	position: relative;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #5a52FF; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.header__menu:hover:after,
+.header__menu:focus:after {
+	color: #5a52ed;
+	width: 100%;
+}
+.body{
+	margin:bottom;
+	margin-bottom:20px;
+	text-align:center;
+	opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+	transition: 1s; /*Скорость перехода состояния элемента*/
+	animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+	animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+}
+
+@keyframes show{  /*Анимация*/
+0%{
+opacity:0;
+}
+100% {
+opacity:1;
+}
+}
+
+.body__header{
+	font-size:36;
+	color: #FFFFFF;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	padding-left: 30px;
+	padding-top: 35px;
+}
+.body__text{
+	font-size: 24;
+	color: #FFFFFF;
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	padding-left: 30px;
+	padding-top: 35px;
+}
