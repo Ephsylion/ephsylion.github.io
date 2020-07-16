@@ -3,10 +3,10 @@ body {
 }
 .header {
   font-size: 14;
-  margin: center;
-  color: #FFFFFF;
+  text-decoration: none;
+ /* margin: center;
   padding-left: 15px;
-  padding-top: 10px;
+  padding-top: 10px;*/
   }
 .header__logo {
   font-size: 52;
@@ -14,19 +14,23 @@ body {
   font-weight: bold;
   color: #FFFFFF;
   display: inline-block;
+  text-decoration: inherit;
 }
 .header__login{
   color: #FFFFFF;
   border: solid 2px #FFFFFF;
-  background-color: #fff0;
+  /*background-color: #fff0;*/
   font-size: 16;
   position: relative;
+  display: inline-block;
   border-radius: 20px;
   display: inline-block;
   float:right;
   border-left-height: 5px;
   border-right-height: 5px;
-  padding-top: 15px;
+  text-decoration: inherit;
+  list-style: none;
+
 }
 .header__menu {
   font-size: 16;
@@ -38,9 +42,9 @@ body {
   text-align: right;
   cursor: pointer;
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 35px;
   padding-right: 15px;
-  text-decoration: none;
+  text-decoration: inherit;
   transition: color 0.3s ease-out;
 }
 .header__menu:after {

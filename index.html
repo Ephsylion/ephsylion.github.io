@@ -10,12 +10,14 @@
 <script src="js/modernizr.js"></script> <!-- Modernizr -->
 <title>FarLands Network</title></head>
 <body>
-	<div class="header">
+	<ul>
 		<div class="header__logo">FarLands</div>		
 		<a class="header__menu" onclick="document.getElementById('id01').style.display='flex'">Войти</a>	
 		<a href="https://ephsylion.github.io/about" class="header__menu">О нас</a>
 		<a class="header__menu">Купить</a>
-	</div>
+	</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<div id="id01" class="modal">
   		<form action="https://localhost:5000/api/auth">
   			<div class="container">
@@ -89,8 +91,6 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/main.js"></script> <!-- Resource jQuery -->
 	<section><footer style="color: white; text-align: center; position: relative; bottom: 20px">FarLands Netwotk, 2020</footer></section>
 </body>
 </html>
