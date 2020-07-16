@@ -2,56 +2,68 @@ body {
 	background: url("images/bg.jpg");
 }
 .header {
-	font-size: 14;
-	margin: center;
-	color: #FFFFFF;
-	padding-left: 15px;
-	padding-top: 10px;
-	height: 45px;
-	width: 300px;
-	}
+  font-size: 14;
+  text-decoration: none;
+ /* margin: center;
+  padding-left: 15px;
+  padding-top: 10px;*/
+  }
 .header__logo {
-	font-size: 52;
-	font-family: 'Baloo Chettan 2', cursive;
-	text-align: center;
-	font-weight: bold;
-	color: #FFFFFF;
-	float: left;
+  font-size: 52;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-weight: bold;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.header__login{
+  color: #FFFFFF;
+  border: solid 2px #FFFFFF;
+  /*background-color: #fff0;*/
+  font-size: 16;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+  display: inline-block;
+  float:right;
+  border-left-height: 5px;
+  border-right-height: 5px;
+  text-decoration: inherit;
+  list-style: none;
+
 }
 .header__menu {
-	font-size: 16;
-	font-family: 'Comfortaa', cursive;
-	text-align: center;
-	position: relative;
-	float: right;
-	color: #7974d9;
-	text-align: right;
-	cursor: pointer;
-	padding-left: 15px;
-	padding-top: 15px;
-	padding-right: 15px;
-	text-decoration: none;
-	transition: color 0.3s ease-out;
-}
-.header_filler {
-	height: 45px;
-	width: 300px;
-	float: left;
+  font-size: 16;
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  position: relative;
+  float: right;
+  color: #7974d9;
+  text-align: right;
+  cursor: pointer;
+  padding-left: 15px;
+  padding-top: 35px;
+  padding-right: 15px;
+  text-decoration: inherit;
+  transition: color 0.3s ease-out;
 }
 .header__menu:after {
-	display: block;
-	position: relative;
-	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
-	width: 0;/*задаём длинну линии до наведения курсора*/
-	height: 2px; /*задаём ширину линии*/
-	background-color: #5a52FF; /*задаём цвет линии*/
-	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+  display: block;
+  position: relative;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0;/*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #5a52FF; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.3s ease-out; /*задаём время анимации*/
 }
 .header__menu:hover:after,
 .header__menu:focus:after {
-	color: #5a52ed;
-	width: 100%;
+  color: #5a52ed;
+  width: 100%;
+}
+.header_filler {
+  float: left;
 }
 .body{
 	margin:bottom;
@@ -87,4 +99,118 @@ opacity:1;
 	text-align: center;
 	padding-left: 30px;
 	padding-top: 35px;
+}
+
+
+* {box-sizing: border-box}
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: opacity 0.5s 0.2s ease 
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 45%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+  float: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Sit on top */
+  width: 25%; /* Full width */
+  height: 75%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(255,255,255,0.85);
+  padding-top: 50px;
+  transition: background-color 1s 1s ease
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
 }

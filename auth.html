@@ -1,11 +1,43 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Регистрация</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style_auth.css"> <!-- Resource style -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<title>FarLands Network</title></head>
 <body>
+	<ul>
+		<div class="header__logo">FarLands</div>			
+		<a href="https://ephsylion.github.io/about" class="header__menu">О нас</a>
+		<a class="header__menu">Купить</a>
+	</ul>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/main.js"></script> <!-- Resource jQuery -->
+	<div class="modal">
+  		<form action="https://localhost:5000/api/auth">
+  			<div class="container">
+    			<h1 style="text-align: center">Регистрация</h1>
+    			<h4 style="color: red; text-align: center;">По тех. причинам авторизация не работает!</h4>
+    			<label for="username"><b>Никнейм</b></label>
+    			<input type="text" placeholder="Ваш ник в игре" name="username" required>
+    			<label for="email"><b>Почта</b></label>
+    			<input type="text" placeholder="Введите E-mail" name="email" required>
+    			<label for="psw"><b>Пароль</b></label>
+    			<input type="password" placeholder="Введите Пароль" name="psw" required>
+    			<label for="psw_repeat"><b>Повтор пароля</b></label>
+    			<input type="password" placeholder="Повторите Пароль" name="psw_repeat" required>
+    			<label style="text-align: center;"><input type="checkbox" checked="unchecked" name="remember" style="margin-bottom:15px;"> Запомнить меня</label>
+    			<p>Создавая и пользуясь аккаунтом, вы соглашаетесь с нашей <a href="privacy.html" style="color:dodgerblue">политикой конфиденциальности</a>.</p>
+    			<div class="clearfix">
+      				<button type="submit" class="signupbtn">Продолжить</button>
+    			</div>
+  			</div>
+		</form>
+	</div>
+	<section><footer style="color: white; text-align: center; position: relative; bottom: 20px">FarLands Netwotk, 2020</footer></section>
 </body>
 </html>
