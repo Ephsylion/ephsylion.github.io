@@ -11,10 +11,10 @@
 		<a href="https://ephsylion.github.io/about" class="header__menu">О нас</a>
 		<a class="header__menu">Купить</a>
 	</ul>
-	<div id="id01" class="modal">
+<div id="id01" class="modal">
   		<form action="https://localhost:5000/api/auth">
   			<div class="container">
-    			<h1 style="text-align: center">Авторизация</h1>
+    			<h1 style="text-align: center">Войти</h1>
     			<h4 style="color: red; text-align: center;">По тех. причинам авторизация не работает!</h4>
     			<label for="username"><b>Никнейм</b></label>
     			<input type="text" placeholder="Ваш ник в игре" name="username" required>
@@ -22,10 +22,7 @@
     			<input type="text" placeholder="Введите E-mail" name="email" required>
     			<label for="psw"><b>Пароль</b></label>
     			<input type="password" placeholder="Введите Пароль" name="psw" required>
-    			<label for="psw_repeat"><b>Повтор пароля</b></label>
-    			<input type="password" placeholder="Повторите Пароль" name="psw_repeat" required>
-    			<label style="text-align: center;"><input type="checkbox" checked="unchecked" name="remember" style="margin-bottom:15px;"> Запомнить меня</label>
-    			<p>Создавая и пользуясь аккаунтом, вы соглашаетесь с нашей <a href="privacy.html" style="color:dodgerblue">политикой конфиденциальности</a>.</p>
+    			<p>Ещё не с нами? <a href="auth.html" style="color:dodgerblue">Создай аккаунт</a>.</p>
     			<div class="clearfix">
       				<button type="button" class="cancelbtn"onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отмена</button>
       				<button type="submit" class="signupbtn">Продолжить</button>
